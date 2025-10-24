@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking the Chains: The Devastating Dangers of Child Marriage</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (optional, but good for interactivity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header class="blog-header">
+        <div class="container">
+            <h1>Breaking the Chains: The Devastating Dangers of Child Marriage</h1>
+            <p>A childhood stolen, a future denied. Understanding the profound impact of child marriage on young lives and global progress.</p>
+        </div>
+    </header>
+
+    <main class="container blog-content">
+        <section class="introduction">
+            <p>Child marriage, defined as a formal or informal union where one or both parties are under the age of 18, is a grave violation of human rights. Despite international conventions and national laws, it remains a widespread practice, particularly affecting girls in developing countries. This practice robs children of their childhood, education, health, and future, perpetuating cycles of poverty and inequality.</p>
+        </section>
+
+        <section class="dangers-grid">
+            <article class="danger-card">
+                <img src="Health.JPEG" alt="Illustration of a young girl facing health risks">
+                <h3><i class="fas fa-heartbeat icon-danger"></i> Severe Health Risks</h3>
+                <p>Child brides are often forced into early pregnancies, leading to higher rates of maternal and infant mortality due to underdeveloped bodies. They face increased risks of obstetric fistulas, sexually transmitted infections (including HIV), and chronic health problems. The psychological toll, including depression, anxiety, and PTSD, is also immense.</p>
+            </article>
+
+            <article class="danger-card">
+                <img src="Closed Door.JPEG" alt="Illustration of a school book and a closed door">
+                <h3><i class="fas fa-book-open icon-danger"></i> End of Education</h3>
+                <p>Marriage almost invariably marks the end of a girl's education. Denied the opportunity to learn and develop, child brides lose out on critical life skills, economic independence, and the ability to contribute fully to their communities. This limits their future prospects and perpetuates a cycle of poverty for their families.</p>
+            </article>
+
+            <article class="danger-card">
+                <img src="Vulnerable.JPEG" alt="Illustration of a vulnerable young person">
+                <h3><i class="fas fa-hand-fist icon-danger"></i> Increased Violence & Abuse</h3>
+                <p>Child brides are more vulnerable to domestic violence, sexual abuse, and exploitation. They often lack the maturity, support networks, and legal recourse to protect themselves. Their young age and subordinate position within the marital household make them easy targets for control and mistreatment, stripping them of their autonomy and dignity.</p>
+            </article>
+
+            <article class="danger-card">
+                <img src="Broken Chain.JPEG" alt="Illustration of a broken chain or poverty cycle">
+                <h3><i class="fas fa-coins icon-danger"></i> Perpetuating Poverty</h3>
+                <p>Child marriage is both a cause and a consequence of poverty. Girls who marry young are less likely to be educated or employed, limiting their economic potential. Their children are also more likely to be malnourished and less educated, trapping families and communities in intergenerational cycles of poverty.</p>
+            </article>
+
+            <article class="danger-card">
+                <img src="Distressed.JPEG" alt="Illustration of a sad or distressed young person">
+                <h3><i class="fas fa-brain icon-danger"></i> Profound Psychological Trauma</h3>
+                <p>The loss of childhood, forced sexual relations, isolation, and lack of agency can lead to severe and lasting psychological trauma. Child brides often suffer from chronic stress, depression, anxiety, and a diminished sense of self-worth. These mental health challenges can affect them throughout their lives.</p>
+            </article>
+
+            <article class="danger-card">
+                <img src="Growth.JPEG" alt="Illustration of a blooming flower or growth">
+                <h3><i class="fas fa-lightbulb icon-danger"></i> Lost Potential for Society</h3>
+                <p>When girls are married off young, society loses out on their potential contributions as educated, healthy, and empowered citizens. They could be innovators, leaders, educators, and entrepreneurs. Preventing child marriage is not just about protecting individual girls, but about fostering stronger, more equitable, and prosperous societies.</p>
+            </article>
+        </section>
+
+        <section class="call-to-action">
+            <h2>What Can We Do?</h2>
+            <p>Ending child marriage requires a multi-faceted approach involving education, legal reform, community engagement, and economic empowerment. Support organizations working on the ground, advocate for stronger laws, and challenge harmful social norms.</p>
+            <button id="showStatsBtn" class="action-button">
+                <i class="fas fa-chart-bar"></i> See Key Statistics
+            </button>
+        </section>
+
+        <section id="statisticsSection" class="statistics-hidden">
+            <h2>Key Global Statistics <i class="fas fa-globe"></i></h2>
+            <ul>
+                <li><strong>12 million girls</strong> are married before age 18 each year.</li>
+                <li>Globally, <strong>21% of young women (aged 20-24)</strong> were married as children.</li>
+                <li>If current trends continue, <strong>150 million more girls</strong> will be married by 2030.</li>
+                <li>Child brides are <strong>3 times more likely</strong> to be victims of domestic violence.</li>
+                <li>Girls with secondary education are <strong>3 times less likely</strong> to marry as children.</li>
+            </ul>
+            <p class="source">Source: UNICEF, Girls Not Brides</p>
+        </section>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>&copy; 2025 Breaking the Chains. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            <div class="social-share">
+                <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactivity
+        document.getElementById('showStatsBtn').addEventListener('click', function() {
+            const statsSection = document.getElementById('statisticsSection');
+            statsSection.classList.toggle('statistics-hidden');
+            statsSection.classList.toggle('statistics-visible');
+            if (statsSection.classList.contains('statistics-visible')) {
+                this.innerHTML = '<i class="fas fa-chart-bar"></i> Hide Statistics';
+            } else {
+                this.innerHTML = '<i class="fas fa-chart-bar"></i> See Key Statistics';
+            }
+        }
+    </script>
+</body>
+</html>

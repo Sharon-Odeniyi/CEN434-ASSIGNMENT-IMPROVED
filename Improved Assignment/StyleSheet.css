@@ -1,0 +1,297 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfaf6; /* A soft, warm off-white */
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.blog-header {
+    background-color: #6B4E71; /* Deep plum/purple */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .blog-header h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.8em;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .blog-header p {
+        font-size: 1.1em;
+        max-width: 700px;
+        margin: 0 auto;
+        opacity: 0.9;
+    }
+
+/* Main Content Styles */
+.blog-content {
+    padding: 40px 20px;
+}
+
+.introduction {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    text-align: justify;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Dangers Grid */
+.dangers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.danger-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+    .danger-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .danger-card img {
+        width: 100%;
+        height: 200px; /* Fixed height for images */
+        object-fit: cover; /* Ensures images cover the area without distortion */
+        display: block;
+        border-bottom: 3px solid #FFDDC1; /* A soft, peachy border */
+    }
+
+    .danger-card h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        color: #6B4E71; /* Deep plum */
+        padding: 20px 20px 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .danger-card h3 .icon-danger {
+            margin-right: 10px;
+            color: #E67E22; /* A warm orange for icons */
+        }
+
+    .danger-card p {
+        padding: 0 20px 20px;
+        font-size: 0.95em;
+        flex-grow: 1; /* Allows paragraphs to take up remaining space */
+        text-align: justify;
+    }
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin: 60px 0;
+    padding: 40px;
+    background-color: #FFDDC1; /* Soft peach background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+    .call-to-action h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
+        color: #6B4E71;
+        margin-bottom: 20px;
+    }
+
+    .call-to-action p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.action-button {
+    background-color: #E67E22; /* Warm orange */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .action-button:hover {
+        background-color: #d36a11; /* Darker orange on hover */
+        transform: translateY(-3px);
+    }
+
+/* Statistics Section (Interactive) */
+.statistics-hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.statistics-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #C1E1FF; /* Soft blue background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+    .statistics-visible h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8em;
+        color: #4E6B71; /* Darker blue-green */
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .statistics-visible ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .statistics-visible ul li {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #E67E22; /* Orange accent */
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+            .statistics-visible ul li strong {
+                color: #6B4E71; /* Deep plum */
+            }
+
+    .statistics-visible .source {
+        font-size: 0.85em;
+        color: #555;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+
+/* Footer Styles */
+.blog-footer {
+    background-color: #4E6B71; /* Dark blue-green */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+    .blog-footer p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .blog-footer a {
+        color: #FFDDC1; /* Soft peach for links */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .blog-footer a:hover {
+            color: #fff;
+        }
+
+.social-share {
+    margin-top: 20px;
+}
+
+    .social-share a {
+        color: #fff;
+        font-size: 1.5em;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+        .social-share a:hover {
+            color: #FFDDC1;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-header h1 {
+        font-size: 2em;
+    }
+
+    .blog-header p {
+        font-size: 1em;
+    }
+
+    .dangers-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .danger-card h3 {
+        font-size: 1.3em;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.6em;
+    }
+
+    .call-to-action p {
+        font-size: 1em;
+    }
+
+    .action-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .statistics-visible h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-header {
+        padding: 40px 0;
+    }
+
+        .blog-header h1 {
+            font-size: 1.8em;
+        }
+
+    .blog-content {
+        padding: 20px 10px;
+    }
+
+    .introduction, .danger-card, .call-to-action, .statistics-visible {
+        padding: 20px;
+    }
+}
+

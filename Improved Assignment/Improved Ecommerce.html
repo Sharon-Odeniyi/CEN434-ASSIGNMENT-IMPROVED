@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Sunshine Stores</title>
+    <link rel="stylesheet" href="Ecommerce.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                Sunshine Stores<i class="fas fa-sun"></i>
+            </a>
+           
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="container">
+            <h1>Discover Our Latest Collection</h1>
+            <p>Quality products, unbeatable prices. Shop with confidence!</p>
+            <a href="#products" class="btn primary-btn">Start Shopping <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <main class="container product-page-layout">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul class="category-list">
+                <li><button class="category-btn active" data-category="all">All Products</button></li>
+                <li><button class="category-btn" data-category="electronics">Electronics</button></li>
+                <li><button class="category-btn" data-category="apparel">Apparel</button></li>
+                <li><button class="category-btn" data-category="home">Home Goods</button></li>
+                <li><button class="category-btn" data-category="books">Books</button></li>
+            </ul>
+
+            <h3>Filter by Price</h3>
+            <div class="price-filter">
+                <input type="range" id="price-range" min="0" max="200000" value="200000">
+                <p>Max Price: ₦<span id="max-price-display">500000</span></p>
+            </div>
+            <button class="btn secondary-btn" id="apply-filters-btn">Apply Filters</button>
+        </aside>
+
+        <section id="products" class="product-listing">
+            <div class="sort-options">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="name-desc">Name: Z-A</option>
+                </select>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics" data-price="40000" data-name="Wireless Headphones">
+                    <img src="wireless headphones.JPEG" alt="Wireless Headphones">
+                    <div class="card-body">
+                        <h3 class="product-name">Wireless Headphones</h3>
+                        <p class="product-price">₦40000.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod1">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="apparel" data-price="7500" data-name="Organic Cotton T-Shirt">
+                    <img src="Tshirts.JPEG" alt="Organic Cotton T-Shirt">
+                    <div class="card-body">
+                        <h3 class="product-name">Organic Cotton T-Shirt</h3>
+                        <p class="product-price">₦7500.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod2">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home" data-price="150000" data-name="Smart Coffee Maker">
+                    <img src="Smart Coffee Maker.JPEG" alt="Smart Coffee Maker">
+                    <div class="card-body">
+                        <h3 class="product-name">Smart Coffee Maker</h3>
+                        <p class="product-price">₦150000.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod3">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="books" data-price="5500" data-name="Best-Selling Novel">
+                    <img src="Best Book.JPEG" alt="Best-Selling Novel">
+                    <div class="card-body">
+                        <h3 class="product-name">Best-Selling Novel</h3>
+                        <p class="product-price">₦5500.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod4">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="electronics" data-price="38000" data-name="Portable Bluetooth Speaker">
+                    <img src="Speaker.JPEG" alt="Portable Bluetooth Speaker">
+                    <div class="card-body">
+                        <h3 class="product-name">Portable Bluetooth Speaker</h3>
+                        <p class="product-price">₦38000.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod5">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="apparel" data-price="50000" data-name="Winter Jacket">
+                    <img src="Jacket.JPEG" alt="Winter Jacket">
+                    <div class="card-body">
+                        <h3 class="product-name">Stylish Winter Jacket</h3>
+                        <p class="product-price">₦50000.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod6">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-category="home" data-price="4500" data-name="Scented Candle Set">
+                    <img src="Candles.JPEG" alt="Scented Candle Set">
+                    <div class="card-body">
+                        <h3 class="product-name">Luxury Scented Candle Set</h3>
+                        <p class="product-price">₦4500.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod7">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-category="books" data-price="10500" data-name="Cooking Recipe Book">
+                    <img src="Cook Book.JPEG" alt="Cooking Recipe Book">
+                    <div class="card-body">
+                        <h3 class="product-name">Gourmet Cooking Recipe Book</h3>
+                        <p class="product-price">₦10500.00</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                        <button class="btn add-to-cart-btn" data-product-id="prod8">Add to Cart <i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Sunshine Stores. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+
+        // Add to Cart functionality
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                cartCount++;
+                document.getElementById('cart-count').textContent = cartCount;
+                alert(`Added "${this.closest('.product-card').querySelector('.product-name').textContent}" to cart! (Items in cart: ${cartCount})`);
+            });
+        });
+
+        // Category Filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                document.querySelector('.category-btn.active').classList.remove('active');
+                this.classList.add('active');
+                applyFiltersAndSort(); // Re-apply all filters and sort
+            });
+        });
+
+        // Price Range Filter
+        const priceRange = document.getElementById('price-range');
+        const maxPriceDisplay = document.getElementById('max-price-display');
+        priceRange.addEventListener('input', function () {
+            maxPriceDisplay.textContent = this.value;
+        });
+
+        document.getElementById('apply-filters-btn').addEventListener('click', applyFiltersAndSort);
+        document.getElementById('sort-by').addEventListener('change', applyFiltersAndSort);
+
+
+        function applyFiltersAndSort() {
+            const selectedCategory = document.querySelector('.category-btn.active').dataset.category;
+            const maxPrice = parseFloat(priceRange.value);
+            const sortBy = document.getElementById('sort-by').value;
+            const productGrid = document.querySelector('.product-grid');
+            const products = Array.from(document.querySelectorAll('.product-card'));
+
+            // Filter
+            products.forEach(product => {
+                const productCategory = product.dataset.category;
+                const productPrice = parseFloat(product.dataset.price);
+
+                const categoryMatch = (selectedCategory === 'all' || productCategory === selectedCategory);
+                const priceMatch = (productPrice <= maxPrice);
+
+                if (categoryMatch && priceMatch) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+
+            // Sort (only visible products)
+            const visibleProducts = products.filter(p => p.style.display === 'block');
+
+            visibleProducts.sort((a, b) => {
+                const nameA = a.dataset.name.toLowerCase();
+                const nameB = b.dataset.name.toLowerCase();
+                const priceA = parseFloat(a.dataset.price);
+                const priceB = parseFloat(b.dataset.price);
+
+                if (sortBy === 'price-asc') {
+                    return priceA - priceB;
+                } else if (sortBy === 'price-desc') {
+                    return priceB - priceA;
+                } else if (sortBy === 'name-asc') {
+                    return nameA.localeCompare(nameB);
+                } else if (sortBy === 'name-desc') {
+                    return nameB.localeCompare(nameA);
+                }
+                return 0; // Default or no change
+            });
+
+            // Re-append sorted products to the grid
+            productGrid.innerHTML = ''; // Clear current grid
+            visibleProducts.forEach(product => productGrid.appendChild(product));
+        }
+
+        // Initial application of filters and sort
+        applyFiltersAndSort();
+    </script>
+</body>
+</html>
+

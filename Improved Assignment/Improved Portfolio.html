@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio - [Your Name/Company]</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Odeniyi Sharon Adejare</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Sharon Odeniyi Adejare</h1>
+                <p>I specialize in web design, clean user interfaces, and thoughtful visual experiences. With a growing background in coding, data analytics, and digital design, I love turning simple ideas into functional, beautiful projects. Let’s build something purposeful and amazing together.</p>
+                <a href="#portfolio" class="btn primary-btn">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="portfolio" class="portfolio-section">
+            <h2>My Latest Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="data">Data Analytics</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item web uiux" data-category="web uiux">
+                    <img src="Dashboard.JPEG" alt="Project Alpha">
+                    <div class="item-overlay">
+                        <h3>Project Alpha: Covenant Student Dashboard</h3>
+                        <p>A redesigned student dashboard that shows courses, GPA, attendance, and study progress.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project1">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item data" data-category="data analytics">
+                    <img src="Skincare.JPEG" alt="Project Beta Branding">
+                    <div class="item-overlay">
+                        <h3>Project Beta: Orma Analytics Dashboard</h3>
+                        <p>A data analytics project for a fictional skincare brand. Analyze sales, customer demographics, or product performance.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project2">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item uiux web" data-category="uiux web">
+                    <img src="UI UX.JPEG" alt="Project Gamma Mobile App">
+                    <div class="item-overlay">
+                        <h3>Project Gamma: WhatsApp Chat UX Redesign</h3>
+                        <p>Redesign a WhatsApp chat screen and simulate data insights.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project3">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-item web" data-category="web">
+                    <img src="Website.JPEG" alt="Project Delta Portfolio Site">
+                    <div class="item-overlay">
+                        <h3>Project Delta: Personal Portfolio Website</h3>
+                        <p>Crafted a clean and elegant online portfolio to showcase creative work.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project4">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="portfolio-item data" data-category="data analytics">
+                    <img src="Infographic.JPEG" alt="Project Epsilon Infographic">
+                    <div class="item-overlay">
+                        <h3>Project Epsilon: Data Infographic</h3>
+                        <p>Visualized complex data into an engaging and easy-to-understand infographic series.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project5">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="portfolio-item branding uiux" data-category="branding uiux">
+                    <img src="Brand Guidelines.JPEG" alt="Project Zeta Brand Guidelines">
+                    <div class="item-overlay">
+                        <h3>Project Zeta: Comprehensive Brand Guidelines</h3>
+                        <p>Developed detailed brand guidelines for a tech startup, ensuring consistent brand application.</p>
+                        <button class="btn secondary-btn view-project-btn" data-project-id="project6">View Details <i class="fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="Sharon.JPG" alt="Your Photo" class="profile-photo">
+                <p>Hello! I'm Sharon, a multidisciplinary creative with 2 years of experience in digital design. My passion lies in crafting visually compelling and highly functional solutions that resonate with users and achieve business goals. I believe in a user-centered approach, combining aesthetics with intuitive design principles to create memorable experiences.</p>
+                <p>When I'm not designing, you can find me reading and eating😅😅.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind or just want to say hello? Feel free to reach out!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Odeniyi Sharon Adejare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="projectDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectTitle"></h3>
+            <img id="modalProjectImage" src="" alt="Project Image">
+            <p id="modalProjectDescription"></p>
+            <p id="modalProjectCategory"></p>
+            <a id="modalProjectLink" href="#" target="_blank" class="btn primary-btn" style="margin-top: 20px;">View Live Project <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+    <script>
+        // Project Data for Modal (in a real app, this might come from an API)
+        const projectsData = {
+            project1: {
+                title: "Project Alpha: E-commerce Redesign",
+                image: "https://via.placeholder.com/800x500/A7C7E7/FFFFFF?text=Project+Alpha+Detail",
+                description: "This project involved a complete overhaul of an existing e-commerce website. The goal was to improve user experience, optimize for mobile devices, and increase conversion rates. Key features included a streamlined checkout process, personalized recommendations, and a modern aesthetic. Tools used: Figma, HTML, CSS, JavaScript.",
+                category: "Web Design, UI/UX",
+                link: "#" // Replace with actual project link
+            },
+            project2: {
+                title: "Project Beta: Brand Identity Kit",
+                image: "https://via.placeholder.com/800x500/E7A7C7/FFFFFF?text=Project+Beta+Detail",
+                description: "For a new sustainable fashion brand, I developed a comprehensive brand identity kit.This included logo design, color palette, typography selection, and brand guidelines for consistent application across all marketing materials. The aim was to convey elegance and environmental consciousness. Tools used: Adobe Illustrator, Adobe Photoshop.",
+                category: "Graphic Design, Branding",
+                link: "#"
+            },
+            project3: {
+                title: "Project Gamma: Mobile App UI",
+                image: "https://via.placeholder.com/800x500/C7E7A7/FFFFFF?text=Project+Gamma+Detail",
+                description: "Designed the user interface for 'HealthFlow', a mobile application focused on tracking daily wellness activities. The design emphasized clarity, ease of navigation, and engaging visual feedback to encourage user engagement. Extensive user research and prototyping were conducted. Tools used: Sketch, Figma, Adobe XD.",
+                category: "UI/UX, Web Design",
+                link: "#"
+            },
+            project4: {
+                title: "Project Delta: Personal Portfolio Site",
+                image: "https://via.placeholder.com/800x500/E7C7A7/FFFFFF?text=Project+Delta+Detail",
+                description: "This project is the very portfolio site you're viewing! It was built from scratch to showcase my skills in front-end development and design. The focus was on a clean, responsive layout, intuitive navigation, and quick loading times. Tools used: HTML, CSS, JavaScript.",
+                category: "Web Design",
+                link: "#"
+            },
+            project5: {
+                title: "Project Epsilon: Data Infographic",
+                image: "https://via.placeholder.com/800x500/A7E7C7/FFFFFF?text=Project+Epsilon+Detail",
+                description: "Transformed complex environmental data into a series of compelling infographics for a non-profit organization. The challenge was to make dense information accessible and engaging for a broad audience, using visual storytelling techniques. Tools used: Adobe Illustrator, Canva.",
+                category: "Graphic Design",
+                link: "#"
+            },
+            project6: {
+                title: "Project Zeta: Comprehensive Brand Guidelines",
+                image: "https://via.placeholder.com/800x500/C7A7E7/FFFFFF?text=Project+Zeta+Detail",
+                description: "Developed a comprehensive set of brand guidelines for a new AI-driven tech startup. This included detailed usage rules for the logo, typography, color palette, imagery, and tone of voice, ensuring brand consistency across all touchpoints. Tools used: Adobe InDesign, Adobe Illustrator.",
+                category: "Branding, UI/UX",
+                link: "#"
+            }
+        };
+
+        // Portfolio Filtering
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                this.classList.add('active');
+                const filter = this.dataset.filter;
+
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category.includes(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Project Detail Modal
+        const modal = document.getElementById('projectDetailModal');
+        const closeButton = document.querySelector('.modal .close-button');
+        const viewProjectButtons = document.querySelectorAll('.view-project-btn');
+
+        viewProjectButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const projectId = this.dataset.projectId;
+                const project = projectsData[projectId];
+                if (project) {
+                    document.getElementById('modalProjectTitle').textContent = project.title;
+                    document.getElementById('modalProjectImage').src = project.image;
+                    document.getElementById('modalProjectImage').alt = project.title;
+                    document.getElementById('modalProjectDescription').textContent = project.description;
+                    document.getElementById('modalProjectCategory').textContent = `Categories: ${project.category}`;
+                    document.getElementById('modalProjectLink').href = project.link;
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                }
+            });
+        });
+
+        closeButton.addEventListener('click', function () {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+    </script>
+</body>
+</html>
