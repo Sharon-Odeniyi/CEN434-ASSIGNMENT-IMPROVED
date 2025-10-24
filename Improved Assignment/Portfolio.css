@@ -121,7 +121,7 @@ h2 {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)), url('https://via.placeholder.com/1500x800/007bff/FFFFFF?text=Hero+Background') no-repeat center center/;
-    color: #fff;
+    color: #808080;
     text-align: center;
     padding: 120px 0;
     display: flex;
@@ -133,7 +133,7 @@ h2 {
 .hero-content h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #808080;
 }
 
 .hero-content p {
